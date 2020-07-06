@@ -1,0 +1,5 @@
+{
+    "phpcbf.onsave": true,
+    "phpcbf.debug": true,
+    "editor.formatOnSave": true
+}

@@ -1,0 +1,55 @@
+.products {
+    .size-woocommerce_thumbnail {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .added_to_cart {
+        display: none;
+    }
+
+    .add_to_cart_button.loading {
+        opacity: 0.5;
+        &:before {
+            margin-right: 5px;
+            content: '';
+            @extend .spinner-border;
+            height: 18px;
+            width: 18px;
+            border-width: 0.2em;
+        }
+    }
+}
+
+.search-no-results {
+    #selected-vehicle {
+        //display: none;
+    }
+}
+
+.woocommerce-pagination {
+    display: block;
+
+    ul {
+        margin: 1em 0;
+        display: flex;
+        list-style: none;
+
+        .page-numbers {
+            position: relative;
+            display: block;
+            padding: 0.5rem 0.75rem;
+            margin-left: -1px;
+            line-height: 1.25;
+            color: $primary;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            margin-right: 0;
+
+            &.current {
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+    }
+}
