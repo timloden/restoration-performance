@@ -77,9 +77,8 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <p mb-0>Classic Body Parts is a reseller and dealer of replacement restoration parts relating to the
-                    Licensed
-                    trademark Chevy, Chevrolet, Ford and Mopar.</p>
+                <p mb-0>Restoration Performance is a reseller and dealer of replacement restoration parts relating to
+                    the Licensed trademark Chevy, Chevrolet, Ford and Mopar.</p>
                 <p class="mb-2 font-weight-bold">Get all the latest product updates, specials and coupons!</p>
 
                 <div class="mb-3" id="mc_embed_signup">
@@ -141,9 +140,7 @@
     </div>
     <div class="copyright bg-primary">
         <div class="container">
-            <p class="text-white m-0 p-2 text-center">&copy; Classic Body Parts <?php echo date("Y"); ?> |
-                Classic Body
-                Parts is solely owned division of Restoration Performance LLC.</p>
+            <p class="text-white m-0 p-2 text-center">&copy; Restoration Performance LLC <?php echo date("Y"); ?></p>
 
         </div>
 

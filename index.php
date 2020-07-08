@@ -21,7 +21,7 @@ get_header();
         <div class="row align-items-center">
             <div class="col-12">
                 <header class="page-header">
-                    <h1 class="page-title text-center">Classic Body Parts Resources</h1>
+                    <h1 class="page-title text-center">Restoration Performance Resources</h1>
                     <div class="archive-description text-center"></div>
                 </header><!-- .page-header -->
             </div>
