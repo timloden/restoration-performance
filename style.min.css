@@ -1159,6 +1159,19 @@ b,strong{font-weight:700}
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,#cart-dropdown .dropdown-toggle,.h6{font-weight:700}
 .title-border{position:relative}
 .title-border:after{content:'';position:absolute;bottom:0;left:0;height:5px;width:10%;background-color:#617a7c}
+.is-loading{z-index:9999;background-color:rgba(255,255,255,0.9)}
+.facetwp-facet{margin-bottom:1em !important}
+.facetwp-facet-categories{border-radius:.25rem;border:1px solid #dee2e6}
+.facetwp-facet-categories .facetwp-link{border-bottom:1px solid #dee2e6;padding:.5em}
+.facetwp-facet-categories .facetwp-link.checked{background-color:#617a7c;color:#fff}
+.facetwp-facet-categories .facetwp-depth{margin-left:0}
+.facetwp-facet-categories .facetwp-depth .facetwp-depth .facetwp-link{padding-left:1.5em}
+.facetwp-facet-categories .facetwp-toggle{padding:.5em;color:#617a7c}
+.facetwp-facet-pagination{display:block}
+.facetwp-facet-pagination .facetwp-pager{margin:1em 0;display:-webkit-box;display:-ms-flexbox;display:flex}
+.facetwp-facet-pagination .facetwp-pager .facetwp-page{position:relative;display:block;padding:.5rem .75rem;margin-left:-1px;line-height:1.25;color:#617a7c;background-color:#fff;border:1px solid #dee2e6;margin-right:0}
+.facetwp-facet-pagination .facetwp-pager .facetwp-page.active{background-color:#617a7c;color:#fff}
+.custom-html-widget .facetwp-facet-year_make_model .facetwp-hierarchy_select{height:calc(1.5em + .75rem + 2px)}
 .gform_wrapper form{margin-bottom:0}
 .gform_wrapper .gfield_required{padding-left:1px;color:#dc3545}
 .validation_message{display:none}
