@@ -180,8 +180,7 @@ get_header();
                     style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/firebird.jpg);">
                     <div class="card-body position-relative">
                         <h4 class="text-white text-center h2">Frequently Asked Questions</h4>
-                        <p class="text-white text-center">Common questions we get about ordering from Restoration
-                            Performance</p>
+                        <p class="text-white text-center">Common questions we get about ordering</p>
                         <a class="text-white text-center d-block mt-5"
                             href="<?php echo site_url(); ?>/frequently-asked-questions/">Browse Frequently
                             Asked Questions</a>

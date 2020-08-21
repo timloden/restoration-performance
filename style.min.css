@@ -1190,6 +1190,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,#cart-dropdown .dropdown-toggle,.h6{font-w
 .home-resource:hover{cursor:pointer}
 .home-resource .card-body{z-index:99}
 .home-resource .card-body a{text-decoration:underline}
+.woocommerce-mini-cart__buttons .btn-success{background-color:#ef9020;color:#fff;border:0}
+.wc-proceed-to-checkout .btn-primary,.wc-proceed-to-checkout .gform_wrapper .button,.gform_wrapper .wc-proceed-to-checkout .button{background-color:#ef9020;color:#fff;border:0}
+#place_order{background-color:#ef9020;color:#fff;border:0}
 @media(prefers-reduced-motion:reduce){.form-control,.gform_wrapper input[type='email'],.gform_wrapper input[type='date'],.gform_wrapper input[type='datetime'],.gform_wrapper input[type='datetime-local'],.gform_wrapper input[type='month'],.gform_wrapper input[type='number'],.gform_wrapper input[type='password'],.gform_wrapper input[type='search'],.gform_wrapper input[type='tel'],.gform_wrapper input[type='text'],.gform_wrapper input[type='time'],.gform_wrapper input[type='week'],.gform_wrapper input[type='url'],.gform_wrapper select,.gform_wrapper textarea{-webkit-transition:none;transition:none}
 .btn,.gform_wrapper .button{-webkit-transition:none;transition:none}
 .fade{-webkit-transition:none;transition:none}

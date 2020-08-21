@@ -1,14 +1,5 @@
-.woocommerce-checkout {
-    .woocommerce-error {
-        @extend .alert;
-        @extend .alert-danger;
-    }
-}
-
-.quantity {
-    width: 60px;
-}
-
-#wc_braintree_paypal_container {
-    padding-top: 1em;
+#place_order {
+    background-color: $rp_orange;
+    color: $white;
+    border: none;
 }
