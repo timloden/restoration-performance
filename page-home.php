@@ -135,8 +135,8 @@ get_header();
 <div class="border-bottom border-top py-5">
     <div class="container">
         <h3 class="text-center pt-3">Some of our featured brands</h3>
-        <p class="text-center pb-3">The Classic Body Parts resource center is here to help answer all of your
-            restoration questions.</p>
+        <p class="text-center pb-3">Restoration Performance carries a wide range of brands for all stages of car
+            restoration.</p>
         <div class="row align-items-center justify-content-center">
             <?php while( have_rows('home_brands') ): the_row(); 
 
