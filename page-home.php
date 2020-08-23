@@ -76,10 +76,9 @@ get_header();
             <div class="col-12 pb-5">
                 <h1 class="text-center h2 pb-3">Restoration Performance - classic car and restoration auto parts at low
                     prices everyday!</h1>
-                <p class="text-center pb-4">Your choice for auto restoration and performance car
-                    parts because of our
+                <p class="text-center pb-4">Your choice for auto restoration and performance car parts because of our
                     respective associations as a dealer from over 50 aftermarket and restoration parts manufacturers to
-                    meet all your vehicle's needs. </p>
+                    meet all your Classic or Muscle vehicle's needs.</p>
             </div>
             <div class="col-12 col-lg-4 text-center">
                 <i class="las la-shipping-fast text-primary"></i>
