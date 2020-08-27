@@ -123,5 +123,15 @@ if(isset($_COOKIE['vehicle'])){
         </div>
     </div>
 
+    <div class="row border-top mt-5 pt-5">
+        <div class="col-12">
+            <h3>Looking for body parts?</h3>
+            <p class="mb-0">If you are having trouble finding body parts for your vehicle, checkout <a
+                    style="color: #005ca9;" href="https://classicbodyparts.com/" target="_blank">Classic Body Parts</a>
+                for the full line of
+                Dynacorn parts!</p>
+        </div>
+    </div>
+
     <?php endif; ?>
 </div>
