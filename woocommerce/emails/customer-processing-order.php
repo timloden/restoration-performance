@@ -27,7 +27,7 @@ do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 <?php /* translators: %s: Customer first name */ ?>
 <?php //printf( esc_html__( 'Hi %s,', 'woocommerce' ), esc_html( $order->get_billing_first_name() ) ); ?>
 <?php /* translators: %s: Order number */ ?>
-<p><?php printf( esc_html__( 'Your Classic Body Parts order %s has been received.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?>
+<p><?php printf( esc_html__( 'Your Restoration Performance order %s has been received.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?>
 </p>
 <p>Hi this is Jon, in customer service here at Restoration Performance.</p>
 <p><?php printf( esc_html__( 'Thank you for your order! Your order number is %s.', 'woocommerce' ), esc_html( $order->get_order_number() ) ); ?>
