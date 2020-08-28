@@ -105,12 +105,12 @@ get_header();
 </div>
 <div class="container">
     <div class="row align-items-center py-5">
-        <div class=" col-12 col-lg-5 order-2 order-lg-1">
+        <div class=" col-12 col-lg-6 order-2 order-lg-1">
             <img class="img-fluid"
-                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/home-page-chevelle.jpg">
+                src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/home-page-mustang-2.jpg">
 
         </div>
-        <div class="col-12 col-lg-7 order-1 order-lg-2 mb-5 mb-lg-5">
+        <div class="col-12 col-lg-6 order-1 order-lg-2 mb-5 mb-lg-5">
             <div class="px-3">
                 <h2 class="pb-3 mb-3 title-border">Why Restoration Performance should be your first choice for classic
                     &amp;
