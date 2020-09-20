@@ -27,9 +27,14 @@ function dakota_digital_discount_message() {
     global $product;
     $id = $product->get_id();
     $brand = get_brand_name($id);
+    $shipping_class= $product->get_shipping_class();
     
     if ($brand == 'Dakota Digital') {
         echo '<p class="font-weight-bold" style="color: #ef9020;">SAVE 5% MORE WHEN ADDED TO CART</p>';
+    }
+
+    if ($brand == 'Goodmark' && $shipping_class == 'goodmark-freight') {
+        echo '<p class="font-weight-bold" style="color: #ef9020;">YOUR ENTIRE FREIGHT ORDER SHIPS FOR $130</p>';
     }
     
 }; 
