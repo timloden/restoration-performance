@@ -27,9 +27,11 @@ $calculator_text          = '';
 
 $shipping_method = WC()->session->get( 'chosen_shipping_methods' )[0];
 ?>
+<tr>
+    <th colspan="2"><?php echo wp_kses_post($package_name); ?></th>
+</tr>
 <tr class="woocommerce-shipping-totals shipping">
-    <th><?php echo wp_kses_post($package_name); ?></th>
-    <td data-title="<?php echo esc_attr($package_name); ?>">
+    <td style="border-top: none;" colspan="2" data-title="<?php echo esc_attr($package_name); ?>">
         <?php if ($available_methods) : ?>
         <ul id="shipping_method" class="woocommerce-shipping-methods list-unstyled mb-2">
             <?php foreach ($available_methods as $method) : ?>
