@@ -30,11 +30,13 @@ function dakota_digital_discount_message() {
     $shipping_class= $product->get_shipping_class();
     
     if ($brand == 'Dakota Digital') {
-        echo '<p class="font-weight-bold" style="color: #ef9020;">SAVE 5% MORE WHEN ADDED TO CART</p>';
+        echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #ef9020; font-size: 1.25em;">SAVE 5% MORE IN CART</p>';
+        echo '<p>Some gauges sets may require assembly from the manufacturer and take up to 4-6 weeks to ship</p>';
     }
 
     if ($brand == 'Goodmark' && $shipping_class == 'goodmark-freight') {
-        echo '<p class="font-weight-bold" style="color: #ef9020;">YOUR ENTIRE FREIGHT ORDER SHIPS FOR $130</p>';
+        echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #000; font-size: 1.25em;">GOODMARK FREIGHT ORDERS SHIP FOR $130</p>';
+        echo '<p>Save money on shipping! Freight orders ship for $130 regardless of how many parts are in the order!</p>';
     }
     
 }; 
