@@ -36,7 +36,7 @@ function dakota_digital_discount_message() {
 
     if ($brand == 'Goodmark' && $shipping_class == 'goodmark-freight') {
         echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #000; font-size: 1.25em;">GOODMARK FREIGHT ORDERS SHIP FOR $130</p>';
-        echo '<p>Save money on shipping! Freight orders ship for $130 regardless of how many parts are in the order!</p>';
+        echo '<p>Save money on shipping! Freight orders ship for $150 to a commercial or residential address!</p>';
     }
     
 }; 
