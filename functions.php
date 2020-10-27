@@ -16,6 +16,8 @@ $myChildUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
     'restoration-performance'
 );
 
+$myUpdateChecker->getVcsApi()->enableReleaseAssets();
+
 //Optional: If you're using a private repository, specify the access token like this:
 //$myUpdateChecker->setAuthentication('your-token-here');
 
