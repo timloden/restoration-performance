@@ -26,6 +26,17 @@ $show_shipping_calculator = !empty($show_shipping_calculator);
 $calculator_text          = '';
 
 $shipping_method = WC()->session->get( 'chosen_shipping_methods' )[0];
+$shipping_classes = [];
+$mixed_freight = false;
+
+foreach ( WC()->cart->get_cart() as $cart_item ) {
+	array_push($shipping_classes, $cart_item['data']->get_shipping_class());
+}
+
+if (in_array('sherman-freight', $shipping_classes) && in_array('goodmark-freight', $shipping_classes)) {
+	$mixed_freight = true;
+}
+
 ?>
 <tr>
     <th colspan="2"><?php echo wp_kses_post($package_name); ?></th>
@@ -51,11 +62,6 @@ $shipping_method = WC()->session->get( 'chosen_shipping_methods' )[0];
             </li>
             <?php endforeach; ?>
         </ul>
-
-        <!-- are we commercial freight?     -->
-        <?php if ($shipping_method === 'flexible_shipping_1_1') : ?>
-
-        <?php endif; ?>
 
         <?php if (is_cart()) : ?>
         <p class="woocommerce-shipping-destination">
@@ -94,3 +100,19 @@ $shipping_method = WC()->session->get( 'chosen_shipping_methods' )[0];
         <?php endif; ?>
     </td>
 </tr>
+
+<!-- do we have mixed freight? -->
+<?php if ($shipping_method === 'flexible_shipping_1_1' && $mixed_freight) : ?>
+
+<tr>
+    <td class="p-0" colspan="2">
+        <div class="d-block p-2" style="background-color: #f6f6f6;">
+            <p class="d-block mb-1 text-center"><strong><i class="las la-exclamation-circle"></i> Multiple Freight
+                    Carriers</strong></p>
+            <p class="text-center mb-0" style="font-size: 12px;">You have freight items from multiple vendors,
+                additional shipping costs may occur.</p>
+        </div>
+    </td>
+</tr>
+
+<?php endif; ?>
