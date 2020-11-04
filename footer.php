@@ -102,6 +102,7 @@ $newsletter_form_id = get_field('footer_newsletter_signup_field_id', 'option');
                         href="<?php echo site_url(); ?>/terms-and-conditions" class="text-dark">Terms and
                         Conditions</a>
                 </p>
+                <p style="font-size: 14px; color: #6c757d">(*$7.50 Shipping excludes oversized items)</p>
             </div>
 
         </div>
