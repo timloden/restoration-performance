@@ -20,7 +20,7 @@ function change_woocommerce_order_number( $order_id ) {
 
 // dakota digital 5% message
 
-add_action( 'woocommerce_before_add_to_cart_form', 'dakota_digital_discount_message', 10, 0 ); 
+add_action( 'woocommerce_single_product_summary', 'dakota_digital_discount_message', 11, 0 ); 
 
 // define the woocommerce_before_add_to_cart_form callback 
 function dakota_digital_discount_message() { 
@@ -30,7 +30,7 @@ function dakota_digital_discount_message() {
     $shipping_class= $product->get_shipping_class();
     
     if ($brand == 'Dakota Digital') {
-        echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #ef9020; font-size: 1.25em;">SAVE 5% MORE IN CART</p>';
+        echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #ef9020; font-size: 1.5em;">SAVE 5% MORE IN CART!</p>';
         echo '<p>Some gauges sets may require assembly from the manufacturer and take up to 4-6 weeks to ship</p>';
     }
 
