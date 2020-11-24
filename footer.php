@@ -83,7 +83,8 @@ $newsletter_form_id = get_field('footer_newsletter_signup_field_id', 'option');
                     <?php 
                     if ($newsletter_form_id) {
                         echo '<p class="mb-2 font-weight-bold">Get all the latest product updates, specials and coupons!</p>';
-                        gravity_form( $newsletter_form_id, false, false, false, '', true, 12 );
+                        //gravity_form( $newsletter_form_id, false, false, false, '', true, 12 );
+                        echo do_shortcode($newsletter_form_id);
                     }
                      ?>
                 </div>
