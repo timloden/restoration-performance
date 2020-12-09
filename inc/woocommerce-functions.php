@@ -31,7 +31,7 @@ function dakota_digital_discount_message() {
     
     if ($brand == 'Dakota Digital') {
         echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #ef9020; font-size: 1.5em;">SAVE 5% MORE IN CART!</p>';
-        echo '<p>Some gauges sets may require assembly from the manufacturer and take up to 4-6 weeks to ship</p>';
+        echo '<p><strong>IMPORTANT</strong>: Gauge sets require assembly and can take up to 4-6 weeks to ship, please email us at <a class="font-weight-bold" href="mailto:sales@restorationperformance.com">sales@restorationperformance.com</a> for availability.</p>';
     }
 
     if ($brand == 'Goodmark' && $shipping_class == 'goodmark-freight') {
