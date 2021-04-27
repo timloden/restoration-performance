@@ -26,6 +26,22 @@ $show_shipping_calculator = !empty($show_shipping_calculator);
 $calculator_text          = '';
 
 $shipping_method = WC()->session->get( 'chosen_shipping_methods' )[0];
+
+// Free Shipping
+$free_rate = 'flexible_shipping_single:4';
+
+// Freight 
+$freight_rate = 'flexible_shipping_single:5';
+
+// Heavy Freight - Commercial Only
+$heavy_freight = 'flexible_shipping_single:6';
+
+// Flat Rate 
+$flat_rate = 'flexible_shipping_single:7';
+
+
+
+
 $shipping_classes = [];
 $mixed_freight = false;
 
@@ -33,7 +49,7 @@ foreach ( WC()->cart->get_cart() as $cart_item ) {
 	array_push($shipping_classes, $cart_item['data']->get_shipping_class());
 }
 
-if (in_array('sherman-freight', $shipping_classes) && in_array('goodmark-freight', $shipping_classes)) {
+if (in_array('oer-freight', $shipping_classes) && in_array('goodmark-freight', $shipping_classes)) {
 	$mixed_freight = true;
 }
 
@@ -102,7 +118,7 @@ if (in_array('sherman-freight', $shipping_classes) && in_array('goodmark-freight
 </tr>
 
 <!-- do we have mixed freight? -->
-<?php if ($shipping_method === 'flexible_shipping_1_1' && $mixed_freight) : ?>
+<?php if ($shipping_method === $freight_rate && $mixed_freight) : ?>
 
 <tr>
     <td class="p-0" colspan="2">
