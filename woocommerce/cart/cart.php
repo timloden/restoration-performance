@@ -200,7 +200,8 @@ $all_shipping_classes = [];
                         <p>We suggest that on truck freight
                             items to stay with only one manufacturer products. Please contact us if that is not possible
                             for you so we can assist: <a
-                                href="mailto:sales@classicbodyparts.com">sales@classicbodyparts.com</a></a></p>
+                                href="mailto:sales@restorationperformance.com">sales@restorationperformance.com</a></a>
+                        </p>
                     </div>
                 </div>
             </div>
