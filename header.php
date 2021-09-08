@@ -40,9 +40,10 @@
                 <div class="container">
                     <div class="row align-items-center py-2">
                         <div class="col-lg-6 d-none d-lg-block">
-                            <span class="border-right mr-2 pr-2">Orders over $150 ship for
-                                $7.50!*</span>
-                            <span><strong>Freight Orders - Shipping $150</strong></span>
+                            <span
+                                class="border-right mr-2 pr-2"><?php echo esc_attr( get_field('ground_shipping_discount', 'option') ); ?></span>
+                            <span><strong>Freight Orders - Shipping
+                                    <?php echo esc_attr( get_field('commercial_freight_starting_at', 'option') ); ?></strong></span>
                         </div>
                         <div class="col-12 col-lg-6 text-center text-lg-right">
                             <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>"

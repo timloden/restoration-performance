@@ -84,15 +84,15 @@
             "maxlength": ""
         },
         {
-            "key": "field_607681037505b",
-            "label": "OER Shipping Notice",
-            "name": "oer_shipping_notice",
+            "key": "field_5f4522e3d4b73",
+            "label": "Footer Newsletter Signup Field ID",
+            "name": "footer_newsletter_signup_field_id",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -103,15 +103,34 @@
             "maxlength": ""
         },
         {
-            "key": "field_5f4522e3d4b73",
-            "label": "Footer Newsletter Signup Field ID",
-            "name": "footer_newsletter_signup_field_id",
+            "key": "field_6137e055bd7c6",
+            "label": "Ground Shipping Discount",
+            "name": "ground_shipping_discount",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "33",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6138dec98e5f0",
+            "label": "Commercial Freight Starting at",
+            "name": "commercial_freight_starting_at",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "33",
                 "class": "",
                 "id": ""
             },
@@ -139,5 +158,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618379024
+    "modified": 1631117012
 }

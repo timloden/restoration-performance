@@ -83,7 +83,10 @@ get_header();
             <div class="col-12 col-lg-4 text-center">
                 <i class="las la-shipping-fast text-primary"></i>
                 <h5 class="my-2 font-weight-bold">$7.50 Shipping</h5>
-                <p class="mb-2">Ground orders over $150 ship for only $7.50! <strong>Freight only $150!</strong></p>
+                <p class="mb-2"><?php echo esc_attr( get_field('ground_shipping_discount', 'option') ); ?>
+                    <strong>Freight only
+                        <?php echo esc_attr( get_field('commercial_freight_starting_at', 'option') ); ?>!</strong>
+                </p>
                 <p style="font-size: 12px; color: #6c757d">(*excludes oversized items)</p>
             </div>
             <div class="col-12 col-lg-4 text-center">
