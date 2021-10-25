@@ -65,6 +65,25 @@
             "new_lines": ""
         },
         {
+            "key": "field_617743a50fcf0",
+            "label": "Contact Email",
+            "name": "contact_email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f4522e3d4b73",
             "label": "Footer Newsletter Signup Field ID",
             "name": "footer_newsletter_signup_field_id",
@@ -299,5 +318,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1634834680
+    "modified": 1635206110
 }
