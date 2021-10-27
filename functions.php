@@ -46,3 +46,15 @@ function child_includes_autoload()
 }
 
 add_action('after_setup_theme', 'child_includes_autoload');
+
+add_filter('acf/settings/load_json', function($paths) {
+    $paths = array();
+  
+    if(is_child_theme()) {
+      $paths[] = get_stylesheet_directory() . '/acf-json';
+    }
+    
+    $paths[] = get_template_directory() . '/acf-json';
+  
+    return $paths;
+  });
