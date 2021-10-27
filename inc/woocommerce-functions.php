@@ -8,16 +8,6 @@
  * @package restoration-performance
  */
 
- //order number
-
-add_filter( 'woocommerce_order_number', 'change_woocommerce_order_number' );
-
-function change_woocommerce_order_number( $order_id ) {
-    $prefix = 'RP-';
-    $new_order_id = $prefix . $order_id;
-    return $new_order_id;
-}
-
 // dakota digital 5% message
 
 add_action( 'woocommerce_single_product_summary', 'dakota_digital_discount_message', 11, 0 ); 
@@ -37,11 +27,6 @@ function dakota_digital_discount_message() {
     if ($brand == 'UMI Performance') {
         echo '<p class="pt-2 mt-3 mb-2 border-top"><strong>IMPORTANT</strong>: Suspension kits require assembly and can take up to 5-6 weeks to ship, please email us at <a class="font-weight-bold" href="mailto:sales@restorationperformance.com">sales@restorationperformance.com</a> for availability.</p>';
     }
-
-    // if ($brand == 'Goodmark' && $shipping_class == 'goodmark-freight') {
-    //     echo '<p class="font-weight-bold pt-2 mt-3 mb-2 text-center text-md-left border-top" style="color: #000; font-size: 1.25em;">GOODMARK FREIGHT ORDERS SHIP FOR $150</p>';
-    //     echo '<p>Save money on shipping! Freight orders ship for $150 to a commercial or residential address!</p>';
-    // }
     
 }; 
 
