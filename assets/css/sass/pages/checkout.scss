@@ -2,4 +2,8 @@
     background-color: $rp_orange;
     color: $white;
     border: none;
+
+    &:hover {
+        background-color: #eb8915;
+    }
 }

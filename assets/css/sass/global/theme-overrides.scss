@@ -1,0 +1,92 @@
+// colors
+$primary: #617a7c;
+$rp_orange: #ef9020;
+$white: #fff;
+
+// BS specific overrides
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+a {
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+        text-decoration: underline;
+    }
+
+    &.btn {
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: $white !important;
+
+    &:hover {
+        background-color: #4b5e5f;
+        border-color: #455758;
+        color: $white;
+    }
+}
+
+.btn-outline-primary {
+    border-color: $primary;
+    color: $primary !important;
+
+    &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        color: $white !important;
+    }
+}
+
+.nav-link {
+    color: $primary;
+}
+
+.title-border {
+    &:after {
+        background-color: $primary;
+    }
+}
+
+.list-group-item.active,
+.woocommerce-MyAccount-navigation .list-group-item.is-active {
+    background-color: $primary;
+    border-color: $primary;
+}
+
+// facet wp
+.facetwp-facet-categories {
+    .facetwp-link {
+        &.checked {
+            background-color: $primary;
+            color: $white !important;
+        }
+    }
+
+    .facetwp-toggle {
+        color: $primary;
+    }
+}
+
+.facetwp-facet-pagination {
+    .facetwp-pager {
+        .facetwp-page {
+            color: $primary;
+
+            &.active {
+                background-color: $primary;
+                color: $white !important;
+            }
+        }
+    }
+}
